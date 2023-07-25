@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar using HTML, CSS and Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="logo">
+            <img src="perumnas_logo.png" alt="logo" href="#">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="#"> Beranda</a></li>
+                <li> <a href="#"> Profile</a>
+                    <ul>
+                        <li> <a href="file:///C:/Users/ASUS/Desktop/CSIRT_newww/csirt_profile.html">Tentang Kami</a></li>
+                        <li> <a href="https://www.perumnas.co.id/visi-misi">Visi Misi</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#"> RFC 2350</a>
+                </li>
+                <li> <a href="#"> Layanan</a>
+                    <ul>
+                        <li> <a href="https://www.google.com/">Aduan Siber</a></li>
+                        <li> <a href="#">Layanan BA</a></li>
+                        <li> <a href="#">Pedoman Teknis</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#"> Event</a>
+                    <ul>
+                        <li> <a href="#">Kegiatan</a></li>
+                        <li> <a href="#">Galeri</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#"> Hubungi Kami</a></li>
+            </ul>
+
+        </nav>
+
+        <img class="semesta-icon" src="samesta-icon.png" alt="iconsmt">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+
+    </header>
+
+    <img class="slider " src="slider1.png" alt="slider" ; width="1520px">
+
+
+    <section id="news-part" class="news-part">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-title-pb-50">
+                        <h1> Berita Terbaru</h1>
+                        <img class="calendar logo" src="calendar_logo.png" alt="calendar" height="17px"> <span id="tanggalwaktu" style="font-family:Arial, Helvetica, sans-serif"></span>
+                    </div>
+
+                    <script>
+                        var dt = new Date();
+                        document.getElementById("tanggalwaktu").innerHTML = dt.toLocaleDateString();
+                    </script>
+                    <br />
+                    <div class="single-news">
+                        <a href="https://www.jpnn.com/news/49-tahun-perumnas-makin-aktif-hadirkan-inovasi-hunian-masyarakat">
+                            <h2>49 Tahun, Perumnas Makin Aktif Hadirkan Inovasi Hunian Masyarakat</h2>
+                        </a>
+                        <img src="logo_ulangtahun.png" alt="fisrtNews" width="500px">
+                        <p>
+                            Perum Perumnas terus bertekad mendukung pemerintah berinovasi dan memberikan produk hunian terbaik bagi masyarakat Indonesia. Selama 49 tahun berdiri, pengembangan inovasi berkelanjutan terus digarap Perumnas guna menghadirkan hunian yang sesuai kebutuhan
+                            dan perkembangan yang terjadi. Tekad untuk menghadirkan hunian yang nyaman dan aman bagi masyarakat dirangkum dalam tema Harmony in Finest Living sebagai tagline HUT Perum Perumnas pada tahun ini.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="single-news-list">
+                        <div class="row">
+                            <div class="com-sm-4">
+                                <div class="news-thum mt-30">
+                                    <img src="newsSide1.png" alt="newsSide1" height="200px">
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="news-cont-mt-30">
+                                    <a href="https://money.kompas.com/read/2023/07/04/211000826/milenial-perumnas-tawarkan-rumah-mulai-rp-400-jutaan-di-jabodetabek">
+                                        <h3> Berita 1 Milenial, Perumnas Tawarkan Rumah Mulai Dari 400 Jutaan di Jabodetabek</h3>
+                                    </a>
+                                    <p>
+                                        "Berita tentang perumnas hari ini pada tanggal 25 Juli 2023. Perumnas tawarkan rumah mulai dari 400 jutaan di Jabodetabek..."
+                                        <a href="https://money.kompas.com/read/2023/07/04/211000826/milenial-perumnas-tawarkan-rumah-mulai-rp-400-jutaan-di-jabodetabek">
+                                        Selengkapnya.. </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="com-sm-4">
+                                <div class="news-thum mt-30">
+                                    <img src="newsSide1.png" alt="newsSide1" height="200px">
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="news-cont-mt-30">
+                                    <a href="https://www.msn.com/id-id/berita/other/alhamdulillah-wajib-pajak-tak-perlu-isi-spt-lagi-mulai-2024/ar-AA1ejesx?ocid=msedgntp&cvid=e971d2e8ad264f9bac9d5e6aa723cc46&ei=9">
+                                        <h3>Berita 2 tentang konten lainnya di daerah Semarang</h3>
+                                    </a>
+                                    <p>
+                                        "Berita tentang konten di Seamarng hari ini pada tanggal 25 Juli 2023 yang sedang berlangsung di Kota kita tercinta Tembalang..."
+                                        <a href="https://www.msn.com/id-id/berita/other/alhamdulillah-wajib-pajak-tak-perlu-isi-spt-lagi-mulai-2024/ar-AA1ejesx?ocid=msedgntp&cvid=e971d2e8ad264f9bac9d5e6aa723cc46&ei=9">
+                                        Selengkapnya.. </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="com-sm-4">
+                                <div class="news-thum mt-30">
+                                    <img src="newsSide1.png" alt="newsSide1" height="200px">
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="news-cont-mt-30">
+                                    <a href="https://www.msn.com/id-id/berita/other/alhamdulillah-wajib-pajak-tak-perlu-isi-spt-lagi-mulai-2024/ar-AA1ejesx?ocid=msedgntp&cvid=e971d2e8ad264f9bac9d5e6aa723cc46&ei=9">
+                                        <h3>Berita 3 Tentang Konten Pada Kota Solo Jawa Tengah</h3>
+                                    </a>
+                                    <p>
+                                        "Berita tentang konten hari ini pada kota Solo yang dikenal dengan warganya yang ramah. Solo juga menjadi tempat favorit untuk menjadi..."
+                                        <a href="https://www.msn.com/id-id/berita/other/alhamdulillah-wajib-pajak-tak-perlu-isi-spt-lagi-mulai-2024/ar-AA1ejesx?ocid=msedgntp&cvid=e971d2e8ad264f9bac9d5e6aa723cc46&ei=9">
+                                        Selengkapnya.. </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!ROW>
+        </div>
+        <!CONTAINER>
+    </section>
+
+
+    <footer id="footer-part">
+        <div class="footer-top pt-40 pb-70">
+            <div class="container">
+                <div class="row">
+                    <h1>This is footer</h1>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>
